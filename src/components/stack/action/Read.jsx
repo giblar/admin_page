@@ -13,14 +13,14 @@ const Read = ({ items, onEdit, onDelete }) => {
       {items.map((item) => (
         <div
           key={item.Stack_id}
-          className="border p-2 mb-2 flex justify-between"
+          className="border p-2 mb-2 flex justify-between flex-col md:flex-row"
         >
           <div className="flex flex-col justify-between">
             <div className="bg-black h-[70%] aspect-square">
               <img
                 src={`${import.meta.env.VITE_API_URL}${item.Gambar}`}
                 alt={item.Gambar}
-                className="aspect-square object-contain w-full max-w-full"
+                className="aspect-square object-contain w-full h-full max-w-full"
               />
             </div>
             <p><span>Nama Stack :</span>{item.NamaStack}</p>

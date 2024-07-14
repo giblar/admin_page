@@ -62,7 +62,7 @@ const Profile = () => {
   };
 
   return (
-    <div className='w-full bg-[#1F2937] min-h-screen max-h-screen overflow-y-auto text-white'>
+    <div className='w-full bg-[#1F2937] min-h-screen max-h-screen overflow-y-auto text-white pt-10'>
       <h1 className='text-5xl font-bold uppercase py-10 px-5'>profile</h1>
       <Read items={items} onEdit={(item) => { setSelectedItem(item); setIsUpdateModalOpen(true); }} onDelete={handleDelete} />
       

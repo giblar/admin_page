@@ -62,8 +62,8 @@ const Stack = () => {
   };
 
   return (
-    <div className='w-full bg-[#1F2937] min-h-screen max-h-screen overflow-y-auto text-white'>
-      <h1 className='text-5xl font-bold uppercase py-10 px-5'>Stack </h1>
+    <div className='w-full bg-[#1F2937] min-h-screen max-h-screen overflow-y-auto text-white pt-10'>
+      <h1 className='text-5xl font-bold uppercase py-10 px-5'>Stack</h1>
       <Read items={items} onEdit={(item) => { setSelectedItem(item); setIsUpdateModalOpen(true); }} onDelete={handleDelete} />
       
       <button onClick={() => setIsCreateModalOpen(true)} className="rounded-full border-dashed border-white border hover:bg-slate-500 text-white p-2 mt-4">

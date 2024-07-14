@@ -47,12 +47,13 @@ const Create = ({ onCreate }) => {
  
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4 w-full flex items-end">
+    <form onSubmit={handleSubmit} className="mb-4 w-full flex items-end gap-2">
       <div className="w-full">
-        <INP
+        <textarea
           placeholder="About Me"
           value={item.isi}
           onChange={(e) => setItem({ ...item, isi: e.target.value })}
+          className="border p-2 mb-2 bg-gray-700 rounded-lg w-full min-h-32"
         />
       </div>
 

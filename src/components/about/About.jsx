@@ -66,13 +66,13 @@ const About = () => {
     <h1 className='text-5xl font-bold uppercase py-10 px-5'>ABOUT</h1>
       <Read items={items} onEdit={(item) => { setSelectedItem(item); setIsUpdateModalOpen(true); }} onDelete={handleDelete} />
       
-      {/* <button onClick={() => setIsCreateModalOpen(true)} className="rounded-full border-dashed border-white border hover:bg-slate-500 text-white p-2 mt-4">
+      <button onClick={() => setIsCreateModalOpen(true)} className="rounded-full border-dashed border-white border hover:bg-slate-500 text-white p-2 mt-4">
         <img src="add.svg" alt="" />
       </button>
 
       <Modal isOpen={isCreateModalOpen} onClose={() => setIsCreateModalOpen(false)} className="animate__animated animate__fadeIn">
         <Create onCreate={handleCreate} />
-      </Modal> */}
+      </Modal>
 
       {selectedItem && (
         <Modal isOpen={isUpdateModalOpen} onClose={() => setIsUpdateModalOpen(false)} className="animate__animated animate__backInRight">

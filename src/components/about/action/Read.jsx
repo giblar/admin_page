@@ -11,7 +11,7 @@ const Read = ({ items, onEdit, onDelete }) => {
       {items.map((item) => (
         <div
           key={item.about_id}
-          className="border p-2 mb-2 flex justify-between w-full"
+          className="border p-2 mb-2 flex flex-col justify-between md:flex-row w-full"
         >
           <div className="max-w-full overflow-hidden">
             <p className="max-w-full break-words">

@@ -13,7 +13,7 @@ export const HomePage = () => {
   };
 
   return (
-    <div className='flex w-full overflow-hidden'>
+    <div className='flex w-full overflow-hidden '>
       <Sidebar />
       <div className='bg-gray-800 w-full flex flex-col px-10 justify-center'>
         <h1 className='text-6xl text-white uppercase font-bold animate-bounce'>Welcome back!!</h1>

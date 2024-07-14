@@ -13,10 +13,10 @@ const Read = ({ items, onEdit, onDelete }) => {
       {items.map((item) => (
         <div
           key={item.Serti_id}
-          className="border p-2 mb-2 flex justify-between"
+          className="border p-2 mb-2 flex justify-between flex-col md:flex-row"
         >
           <div className="flex flex-col justify-between">
-            <div className="bg-black">
+            <div className="bg-black flex items-start justify-start">
               <img
                 src={`${import.meta.env.VITE_API_URL}${item.Gambar}`}
                 alt={item.Gambar}
